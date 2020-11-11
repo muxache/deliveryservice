@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.mtuci.delivery.api.deliveryservice.controller.ProductControllerTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.15 s - in com.mtuci.delivery.api.deliveryservice.controller.ProductControllerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.258 s - in com.mtuci.delivery.api.deliveryservice.controller.ProductControllerTest

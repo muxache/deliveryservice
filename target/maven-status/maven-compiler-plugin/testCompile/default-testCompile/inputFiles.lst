@@ -1,5 +1,5 @@
-/Users/mcherezov/Documents/Project/Java/api2.0/deliveryservice/src/test/java/com/mtuci/delivery/api/deliveryservice/controller/DeliverControllerTest.java
-/Users/mcherezov/Documents/Project/Java/api2.0/deliveryservice/src/test/java/com/mtuci/delivery/api/deliveryservice/controller/ProductControllerTest.java
-/Users/mcherezov/Documents/Project/Java/api2.0/deliveryservice/src/test/java/com/mtuci/delivery/api/deliveryservice/controller/OrderControllerTest.java
-/Users/mcherezov/Documents/Project/Java/api2.0/deliveryservice/src/test/java/com/mtuci/delivery/api/deliveryservice/DeliveryserviceApplicationTests.java
-/Users/mcherezov/Documents/Project/Java/api2.0/deliveryservice/src/test/java/com/mtuci/delivery/api/deliveryservice/AbstractTest.java
+/Users/mcherezov/Documents/Project/Java/deliveryservice/src/test/java/com/mtuci/delivery/api/deliveryservice/controller/ProductControllerTest.java
+/Users/mcherezov/Documents/Project/Java/deliveryservice/src/test/java/com/mtuci/delivery/api/deliveryservice/controller/OrderControllerTest.java
+/Users/mcherezov/Documents/Project/Java/deliveryservice/src/test/java/com/mtuci/delivery/api/deliveryservice/AbstractTest.java
+/Users/mcherezov/Documents/Project/Java/deliveryservice/src/test/java/com/mtuci/delivery/api/deliveryservice/controller/DeliverControllerTest.java
+/Users/mcherezov/Documents/Project/Java/deliveryservice/src/test/java/com/mtuci/delivery/api/deliveryservice/DeliveryserviceApplicationTests.java
