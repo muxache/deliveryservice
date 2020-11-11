@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deliveryservice-deployment
+  labels:
+    app: deliveryservice
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: deliveryservice
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: deliveryservice
+    spec:
+      containers:
+      - name: deliveryservice
+        image: muxache/deliveryservice-docker:v1.2
+        ports:
+        - containerPort: 8099
