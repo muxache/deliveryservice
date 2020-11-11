@@ -1,0 +1,5 @@
+com/mtuci/delivery/api/deliveryservice/controller/ProductControllerTest.class
+com/mtuci/delivery/api/deliveryservice/AbstractTest.class
+com/mtuci/delivery/api/deliveryservice/controller/DeliverControllerTest.class
+com/mtuci/delivery/api/deliveryservice/DeliveryserviceApplicationTests.class
+com/mtuci/delivery/api/deliveryservice/controller/OrderControllerTest.class
