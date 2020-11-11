@@ -6,5 +6,5 @@ jdk:
 
 deploy:
  provider: heroku
- api_key: $HEROKU_API_KEY
+ api_key: a2133992-ceeb-491f-8bb6-ec8aa5ea723a
  app: deliveryservice1
