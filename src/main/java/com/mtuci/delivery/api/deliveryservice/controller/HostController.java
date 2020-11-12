@@ -1,7 +1,6 @@
 package com.mtuci.delivery.api.deliveryservice.controller;
 
 import java.io.IOException;
-import java.net.UnknownHostException;
 
 import com.mtuci.delivery.api.deliveryservice.model.Host;
 import com.mtuci.delivery.api.deliveryservice.service.HostService;

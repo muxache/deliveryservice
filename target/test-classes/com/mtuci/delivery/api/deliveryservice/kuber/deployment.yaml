@@ -19,7 +19,7 @@ spec:
       labels:
         app: deliveryservice
     spec:
-      containers:
+    containers:
       - name: deliveryservice
         image: muxache/deliveryservice-docker:v1.2
         ports:

@@ -1,8 +1,5 @@
 package com.mtuci.delivery.api.deliveryservice.controller;
 
-import java.util.List;
-
-import com.mtuci.delivery.api.deliveryservice.exception.ResourceNotFoundExeption;
 import com.mtuci.delivery.api.deliveryservice.model.Product;
 import com.mtuci.delivery.api.deliveryservice.repository.ProductRepository;
 

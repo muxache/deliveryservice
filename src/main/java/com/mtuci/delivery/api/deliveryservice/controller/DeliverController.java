@@ -1,9 +1,7 @@
 package com.mtuci.delivery.api.deliveryservice.controller;
 
-
-import com.mtuci.delivery.api.deliveryservice.exception.ResourceNotFoundExeption;
 import com.mtuci.delivery.api.deliveryservice.model.Deliver;
-import com.mtuci.delivery.api.deliveryservice.repository.DeliverRepository;
+import com.mtuci.delivery.api.deliveryservice.service.DeliverService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -20,38 +18,41 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api")
 public class DeliverController {
+    
+
     @Autowired
-    private DeliverRepository deliverRepository;
+    private DeliverService deliverService;
 
     @CrossOrigin
     @PostMapping("/deliver")
     public ResponseEntity<?> createDeliver(@RequestBody Deliver deliver) {
-        return new ResponseEntity<>(deliverRepository.save(deliver), HttpStatus.CREATED);
+        return new ResponseEntity<>(deliverService.createDeliver(deliver), HttpStatus.CREATED);
     }
 
     @CrossOrigin
     @GetMapping("/deliver")
     public ResponseEntity<?> listDeliver() {
-        return new ResponseEntity<>(deliverRepository.findAll(), HttpStatus.OK);
+        return new ResponseEntity<>(deliverService.findAllDeliver(), HttpStatus.OK);
         
     }
 
 
     @CrossOrigin
     @GetMapping("/deliver/{id}")
-    public ResponseEntity<?> getById(@PathVariable Long id) {
-        return deliverRepository.findById(id).map(deliver -> {
-            return new ResponseEntity<>(deliverRepository.getOne(id), HttpStatus.OK);
+    public ResponseEntity<?> getDeliverById(@PathVariable Long id) {
+        return deliverService.getDeliverById(id).map(deliver -> {
+            return new ResponseEntity<>(deliver, HttpStatus.OK);
         }).orElse(ResponseEntity.status(HttpStatus.NO_CONTENT).build());
     }
     
     @CrossOrigin
     @DeleteMapping("/deliver/{id}")
     public ResponseEntity<?> deleteDeliver(@PathVariable Long id) {
-        return deliverRepository.findById(id).map(deliver -> {
-            deliverRepository.delete(deliver);
+        if (deliverService.deleteDeliverById(id)) {
             return ResponseEntity.status(HttpStatus.OK).build();
-        }).orElse(ResponseEntity.status(HttpStatus.NO_CONTENT).build());
+        } else {
+            return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+        }
     }
     
 
