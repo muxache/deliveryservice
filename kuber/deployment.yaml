@@ -21,6 +21,6 @@ spec:
     spec:
     containers:
       - name: deliveryservice
-        image: muxache/deliveryservice-docker:v1.2
+        image: muxache/deliveryservice-docker:v1.4
         ports:
         - containerPort: 8099
