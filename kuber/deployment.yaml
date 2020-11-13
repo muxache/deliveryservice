@@ -2,13 +2,11 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: my-deployment
-  labels:
-    app: deliveryservice
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
-      app: deliveryservice
+      app: my-app
   strategy:
     rollingUpdate:
       maxSurge: 1
@@ -17,11 +15,11 @@ spec:
   template:
     metadata:
       labels:
-        app: deliveryservice
+        app: my-app
     spec:
     containers:
       - image: myapi:latest
-        imagePullPolicy: Never
+        imagePullPolicy: Never 
         name: myapi
         ports:
-        - containerPort: 8099
+          - containerPort: 8099
