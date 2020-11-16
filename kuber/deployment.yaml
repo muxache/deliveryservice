@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: my-deployment
 spec:
-  replicas: 2
+  replicas: 10
   selector:
     matchLabels:
       app: my-app
@@ -17,9 +17,9 @@ spec:
       labels:
         app: my-app
     spec:
-    containers:
-      - image: myapi:latest
-        imagePullPolicy: Never 
-        name: myapi
-        ports:
-          - containerPort: 8099
+      containers:
+        - image: myapi:latest
+          imagePullPolicy: Never 
+          name: myapi
+          ports:
+            - containerPort: 8099
