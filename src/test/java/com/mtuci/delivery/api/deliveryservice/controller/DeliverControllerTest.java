@@ -21,6 +21,12 @@ public class DeliverControllerTest extends AbstractTest {
     Deliver deliver  = new Deliver();
 
     @Test
+    public void createListDeleteTest() throws Exception {
+        createTestDeliver();
+        listDeliverTest();
+        deleteTestDeliver();
+    }
+
     public void listDeliverTest() throws Exception {
         String uri = "/api/deliver";
         MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.get(uri).accept(MediaType.APPLICATION_JSON_VALUE))

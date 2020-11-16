@@ -22,6 +22,13 @@ public class ProductControllerTest extends AbstractTest {
     Product product  = new Product();
 
     @Test
+    public void createListDeleteProduct() throws Exception {
+       createTestProduct();
+       listDeliverTest();
+       deleteTestProduct();
+    }
+
+
     public void listDeliverTest() throws Exception {
         String uri = "/api/product";
         MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.get(uri).accept(MediaType.APPLICATION_JSON_VALUE))

@@ -20,7 +20,15 @@ public class OrderControllerTest extends AbstractTest {
 
     Order order  = new Order();
 
+
     @Test
+    public void createListDeleteTest() throws Exception {
+       createTestOrder();
+       listOrderTest();
+       deleteTestOrder();
+    }
+
+    
     public void listOrderTest() throws Exception {
         String uri = "/api/order";
         MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.get(uri).accept(MediaType.APPLICATION_JSON_VALUE))
