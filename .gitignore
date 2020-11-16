@@ -36,3 +36,4 @@ target/test-classes/com/mtuci/delivery/api/deliveryservice/controller/OrderContr
 target/test-classes/com/mtuci/delivery/api/deliveryservice/controller/ProductControllerTest.class
 workspace.code-workspace
 HELP.md
+target/classes/com/mtuci/delivery/api/deliveryservice/service/ProductService.class
