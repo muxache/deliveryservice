@@ -36,7 +36,4 @@ target/test-classes/com/mtuci/delivery/api/deliveryservice/controller/OrderContr
 target/test-classes/com/mtuci/delivery/api/deliveryservice/controller/ProductControllerTest.class
 mvnw.cmd
 workspace.code-workspace
-.mvn/wrapper/maven-wrapper.jar
-.mvn/wrapper/maven-wrapper.properties
-.mvn/wrapper/MavenWrapperDownloader.java
 HELP.md
