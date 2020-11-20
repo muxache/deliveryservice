@@ -6,8 +6,8 @@ spec:
   type: NodePort
   ports:
     - nodePort: 31317
-      port: 8099
+      port: 8080
       protocol: TCP
-      targetPort: 8099
+      targetPort: 8080
   selector:
     app: deliveryservice

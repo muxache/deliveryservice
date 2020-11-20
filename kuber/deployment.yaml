@@ -22,4 +22,8 @@ spec:
           imagePullPolicy: Never 
           name: myapi
           ports:
-            - containerPort: 8099
+            - containerPort: 8080
+      hostAliases:
+        - ip: "192.168.49.1"
+          hostnames:
+          - postgres.local
