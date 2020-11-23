@@ -68,14 +68,13 @@ spec:
         - ip: "192.168.49.1"
           hostnames:
           - postgres.local        
-          
 ```
 
 ## Проверяем  количество подов с помощью команды:
 
    `kubectl get pods`
     
- [Скриншты вывода команды консоли](https://github.com/muxache/deliveryservice/kuber/telegram-cloud-photo-size-2-5291920830395166986-y.jpg)
+ [Скриншты вывода команды консоли](kuber/telegram-cloud-photo-size-2-5291920830395166986-y.jpg)
 
 ## Осмотр подов в графическом интерфейсе:
 
