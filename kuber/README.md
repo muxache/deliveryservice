@@ -75,11 +75,11 @@ spec:
 
    `kubectl get pods`
     
- [Скриншты вывода команды консоли](https://github.com/lsemenov/mylab/blob/master/kuberlab/telegram-cloud-photo-size-2-5291920830395166986-y.jpg)
+ [Скриншты вывода команды консоли](https://https://github.com/muxache/deliveryservice/kuber/telegram-cloud-photo-size-2-5291920830395166986-y.jpg)
 
 ## Осмотр подов в графическом интерфейсе:
 
-[Скриншоты графического интерфейса с подами](https://github.com/lsemenov/mylab/blob/master/kuberlab/telegram-cloud-photo-size-2-5291920830395166988-y.jpg)
+[Скриншоты графического интерфейса с подами](https://github.com/muxache/deliveryservice/kuber/telegram-cloud-photo-size-2-5291920830395166988-y.jpg)
 
 ## Обращаюсь к ендпоинту, где отображается hostname:
 
